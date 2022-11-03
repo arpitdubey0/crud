@@ -1,4 +1,8 @@
-import React from 'react'
+import React from 'react';
+
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Table() {
     return (
@@ -25,12 +29,13 @@ function Table() {
                             <td>aa@gmail</td>
                             <td>1234</td>
                             <td className='d-flex justify-content-between'>
-                                <button className='btn btn-success'><i class="fa-sharp fa-solid fa-eye-slash"></i></button>
-                                <button className='btn btn-warning'><i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
-                                <button className='btn btn-danger'><i class="fa-sharp fa-solid fa-trash"></i></button>
+                                <button className='btn btn-success'><RemoveRedEyeIcon/></button>
+                                <button className='btn btn-warning'><EditIcon/></button>
+                                <button className='btn btn-danger'><DeleteIcon/></button>
                             </td>
 
                         </tr>
+                       
                         
                     </tbody>
                 </table>

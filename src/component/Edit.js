@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
-const Register = () => {
+function edit() {
 
+    //react hooks
     const [inpval,setINP]=useState({
         username:"",
         email:"",
@@ -10,13 +11,10 @@ const Register = () => {
 
     })
 
-
     const setdata=(e)=>{
-
        console.log( e.target.setdata);
        const {name,value}=e.target;
        setINP((preval)=>{
-
         return{
             ...preval,
             [name]:value
@@ -24,8 +22,8 @@ const Register = () => {
 
        })
     }
-    return (
-        <div className='container'>
+  return (
+    <div className='container'>
             <NavLink to="/">Home</NavLink>
             <form className='mt-5'>
                 <div className="row">
@@ -53,7 +51,7 @@ const Register = () => {
 
 
         </div>
-    )
+  )
 }
 
-export default Register
+export default edit
